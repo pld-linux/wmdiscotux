@@ -44,7 +44,7 @@ install tux-icon.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root,755)                                                     
+%defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{xmms_visualization_plugindir}/libwmdiscotux.so
 %attr(644,root,root) %{_pixmapsdir}/tux-icon.xpm
