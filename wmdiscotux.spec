@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications/Sound
 Source0:	http://fragment.stc.cx/files/%{name}-%{version}.tar.gz
+Icon:		tux-icon.xpm
 URL:		http://wmdiscotux.stc.cx
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
