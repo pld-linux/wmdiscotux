@@ -2,16 +2,16 @@ Summary:	An XMMS plugin for WindowMaker
 Summary(pl):	Wtyczka graficzna dla WindowMakera
 Name:		wmdiscotux
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Sound
 Source0:	http://fragment.stc.cx/files/%{name}-%{version}.tar.gz
 Icon:		tux-icon.xpm
 URL:		http://wmdiscotux.stc.cx/
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_xmms_plugin_dir	%(xmms-config --visualization-plugin-dir)
+Requires:	xmms
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 wmDiscoTux is a simple xmms visualization plugin that sits nicely
@@ -32,9 +32,9 @@ rm -f *.so
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_xmms_plugin_dir}}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{xmms_visualization_plugindir}}
 
-install *.so $RPM_BUILD_ROOT%{_xmms_plugin_dir}
+install *.so $RPM_BUILD_ROOT%{xmms_visualization_plugindir}
 install tux-icon.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
@@ -43,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)                                                     
 %doc README
-%attr(755,root,root) %{_xmms_plugin_dir}/libwmdiscotux.so
+%attr(755,root,root) %{xmms_visualization_plugindir}/libwmdiscotux.so
 %attr(644,root,root) %{_pixmapsdir}/tux-icon.xpm
