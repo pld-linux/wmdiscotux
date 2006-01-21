@@ -8,7 +8,6 @@ Group:		X11/Applications/Sound
 Source0:	http://fragment.stc.cx/files/%{name}-%{version}.tar.gz
 # Source0-md5:	8043c73f29f1305446594a0353ad7839
 Patch0:		%{name}-gcc33.patch
-Icon:		tux-icon.xpm
 URL:		http://wmdiscotux.stc.cx/
 BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
