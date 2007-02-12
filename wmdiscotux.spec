@@ -1,5 +1,5 @@
 Summary:	An XMMS plugin for WindowMaker
-Summary(pl):	Wtyczka dla XMMS-a dla WindowMakera
+Summary(pl.UTF-8):   Wtyczka dla XMMS-a dla WindowMakera
 Name:		wmdiscotux
 Version:	1.3
 Release:	2
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wmDiscoTux is a simple XMMS visualization plugin that sits nicely in
 windowmaker'a dock. Tux moves his bodyparts with the music.
 
-%description -l pl
-wmDiscoTux jest prost± wtyczk± graficzn± dla XMMS-a, która ³adnie
-komponuje siê z WindowMakerem. Tux porusza cia³em w rytm muzyki.
+%description -l pl.UTF-8
+wmDiscoTux jest prostÄ… wtyczkÄ… graficznÄ… dla XMMS-a, ktÃ³ra Å‚adnie
+komponuje siÄ™ z WindowMakerem. Tux porusza ciaÅ‚em w rytm muzyki.
 
 %prep
 %setup -q
