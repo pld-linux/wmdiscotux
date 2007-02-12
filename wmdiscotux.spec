@@ -1,5 +1,5 @@
 Summary:	An XMMS plugin for WindowMaker
-Summary(pl.UTF-8):   Wtyczka dla XMMS-a dla WindowMakera
+Summary(pl.UTF-8):	Wtyczka dla XMMS-a dla WindowMakera
 Name:		wmdiscotux
 Version:	1.3
 Release:	2
